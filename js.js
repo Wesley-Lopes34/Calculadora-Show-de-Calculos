@@ -14,15 +14,19 @@ function back(){
 }
 
 function calcular(){
+    const regex = /^[++--**//]/;
+
+if (regex) {
+    alert("Entrada inválida. O meio pelo qual você digitou é desconhecido, por favor use apenas um caractere de ADIÇÃO, SUBTRAÇÃO, DIVISÃO ou MULTIPLICAÇÃO por vez.");
+    return;
+  }
+
     var resultado = document.getElementById('resultado').innerHTML;
     if(resultado){
     document.getElementById('resultado').innerHTML = eval(resultado);
 }
     else{
         document.getElementById('resultado').innerHTML = "Nada...";
-    }
-    if("++"){
-        window.alert("Atenção");
     }
 
 }
