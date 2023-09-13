@@ -16,10 +16,20 @@ function back(){
 function calcular(){
   
     var resultado = document.getElementById('resultado').innerHTML;
+
     if(resultado == '--' || resultado == '++' || resultado == '**' || resultado == '//' || resultado == '+-' || resultado == '+*' || resultado == '+/' || resultado == '-+' || resultado == '-*' || resultado == '-/' || resultado == '*-' || resultado == '*/' || resultado == '*+' || resultado == '/*' || resultado == '/-' || resultado == '/+'){
         alert("Você tem que usar somente um parametro de calculo!!")
         return clean();
     }
+    if(resultado == '.' || resultado == '..' || resultado == '...'){
+        alert("Sim, não quer fazer nenhum calculo não?")
+        return clean();
+    }
+
+    if(resultado == '0'){
+        alert("Para aqueles que não conhecem, esse é o numero ZERO(0)")
+    }
+
     if(resultado){
     document.getElementById('resultado').innerHTML = eval(resultado);
 }
