@@ -16,7 +16,7 @@ function back(){
 function calcular(){
   
     var resultado = document.getElementById('resultado').innerHTML;
-    if(resultado == '--' || resultado == '++' || resultado == '**' || resultado == '//'){
+    if(resultado == '--' || resultado == '++' || resultado == '**' || resultado == '//' || resultado == '+-' || resultado == '+*' || resultado == '+/' || resultado == '-+' || resultado == '-*' || resultado == '-/' || resultado == '*-' || resultado == '*/' || resultado == '*+' || resultado == '/*' || resultado == '/-' || resultado == '/+'){
         alert("Você tem que usar somente um parametro de calculo!!")
         return clean();
     }
