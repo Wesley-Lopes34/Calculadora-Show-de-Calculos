@@ -21,6 +21,10 @@
     font-size: 25px;
     padding: 5px;
     text-align: right;
+    max-width: 207ch;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .botao{
