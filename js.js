@@ -36,13 +36,17 @@ function calcular(){
 
     if(resultado == '0'){
         alert("Para aqueles que não conhecem, esse é o numero ZERO(0)")
+        return clean();
     }
 
     if(resultado){
     document.getElementById('resultado').innerHTML = eval(resultado);
 }
     else{
-        document.getElementById('resultado').innerHTML = "Nada...";
+        alert("Nada...")
+        return clean();
+        
     }
+    
 
 }
